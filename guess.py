@@ -1,8 +1,11 @@
-print("Welcome")
+print("Welcome!")
 g = input("Guess the number: ")
 guess = int(g)
-if guess == 9:
+if guess == 5:
     print("You win!")
 else:
-    print("You lose!")
+    if guess > 5:
+        print("Too high")
+    else:
+        print("Too low")
 print("Game over")
